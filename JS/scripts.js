@@ -25,44 +25,67 @@ class Student{
 
     //list all student
     list(){
-        Students.forEach(_student=>{
-            console.log("Name : "+_student.name)
-            console.log("Name : "+_student.age)
-            console.log("Name : "+_student.gender)
-            console.log("Name : "+_student.location)
+        Students.forEach(student=>{
+            console.log("Name : "+student.name);
+            console.log("Name : "+student.age);
+            console.log("Name : "+student.gender);
+            console.log("Name : "+student.location);
 
         });
     }
 
     //edit
-
+    edit(id,name,location){
+        Students[id].name=name;
+        Students[id].location=location;
+        console.log(Students[id]);
+    }
 
     
     //delete
-
+    delete(){
+        Students.pop();
+    }
 
 }
 
-student=new Student();
+students=new Student();
 while(true){
-    choice=parseInt(window.prompt("1. Add \n2.List"));
+    choice=parseInt(window.prompt("1. Add \n2. List\n3. Edit\n4. Delete"));
 
     //go to switch
     switch(choice){
         case 1:
             sName=window.prompt("Enter name: ");
-            age=parseInt(window.prompt("Enter age"))
-            location=window.prompt("Enter Gender : ")
-            location=window.prompt("Enter location : ")
-            student.add(sName,age,gender,location);
-            console.log(student);
+            age=parseInt(window.prompt("Enter age"));
+            gender=window.prompt("Enter Gender : ");
+            slocation=window.prompt("Enter location : ");
+            students.add(sName,age,gender,slocation);
+            console.log(students);
             break;
         case 2:
-            student.list();
-            console.log(student);
+            alert(1);
+            students.list();
+            console.log(students);
+            break;
+        case 3:
+            sid=parseInt(window.prompt("Enter index number"));
+            sName=window.prompt("Enter the name");
+            slocation=window.prompt("Enter the location");
+            students.edit(sid,sName,slocation);
+            console.log(students);
+            break;
+        case 4:
+            students.delete();
+            console.log(students);
             break;
         default:
-            alert("Invalid Input!")
+            alert("Invalid Input!");
+    }
+    let bool=prompt("do you want to continue(y/n)?");
+    if(bool.charAt(0)=='n'|| bool.charAt(0)=="N")
+    {
+        choice=false;
     }
 
 }
