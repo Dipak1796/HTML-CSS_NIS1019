@@ -1,0 +1,24 @@
+.container{
+    
+    position: relative;
+    top: 20px;
+    background-color: rgb(234, 240, 240);
+    width: 50%;
+    margin: auto;
+    border: 1px black solid;
+    padding: 50px;
+    border-radius: 10px;
+}
+.form-item{
+    box-sizing: border-box;
+    margin: 15px;
+}
+.lower-side{
+    background-color: rgb(180, 151, 108);
+}
+.form-item>label{
+    display: block;
+}
+.form-Item>input{
+    width: 100px;
+}

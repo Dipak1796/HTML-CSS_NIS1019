@@ -1,0 +1,51 @@
+body{
+    background-color: #F2f2f2;
+    font-family: 'Merriweather',serif;
+}
+.sidebar{
+    background-color: rgb(58, 52, 45);
+    left: 20px;
+    top: 30px;
+    height: 100%;
+    width: 200PX;
+    padding-left: 0;
+    position: absolute;
+}
+
+.sidebar ul{
+    margin-top: auto;
+    list-style: none;
+    padding: 90% 2%;
+}
+.sidebar li{
+    padding: 20px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #F2f2f2;
+    display:block;
+}
+
+.sidebar li:hover{
+    background-color: #f96d00;
+}
+.profile{
+    max-width: 300px;
+    margin: 10px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.content{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 210px;
+}
+#hobbies{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 210px;
+
+}

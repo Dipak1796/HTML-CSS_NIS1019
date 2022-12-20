@@ -1,0 +1,25 @@
+.container{
+    position: relative;
+    top: 20px;
+    background-color: rgb(233, 239, 239);
+    width: 25%;
+    margin: auto;
+    border: 1px black solid;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+form>h2{
+    text-align: center;
+}
+.form-item{
+    box-sizing: border-box;
+    margin: 15px;
+}
+.form-item>label{
+    display: block;
+}
+.form-item>input[type="text"]{
+
+    width: 100%;
+}
