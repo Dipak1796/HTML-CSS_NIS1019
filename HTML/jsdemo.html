@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+      //JSON can be created by using stringfy()
+     var jsonstring=JSON.stringify( {
+      "name":"Goutam",
+      "age":"25",
+      "Address":{
+              "district":"Shivasagar",
+              "state":"Assam"
+      },
+      "qualification":{
+        "PG_Diploma":"PG-DAC",
+        "UG":"BE Mechanical Engg.",
+        "Diploma":"Mechanical Engg"
+      }
+     });
+     alert(jsonstring);
+
+     //JSON can be parsed by using parse()
+     var nameFromJson=JSON.parse(jsonstring);
+     alert(nameFromJson.Address.district);
+     alert(nameFromJson.qualification.PG_Diploma)
+    </script>
+</body>
+</html>

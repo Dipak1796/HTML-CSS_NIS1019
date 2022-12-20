@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Java Script Demo</title>
+
+</head>
+
+
+
+<body>
+
+    <h2>JavaScript in Body</h2>
+
+    <p id="demo"></p>
+
+   
+
+    <script>
+
+        let name ="Sairaj";
+
+        let string = "Hello and welcome"
+
+        let part = string.slice(3,10); // it takes index inthis case it will take index till 9
+
+        //alert(part); //lo and
+
+       // part = string.substr(3,2); // it takes no. of characters from that point i.e it will start from index 3 and print 2 characters from it
+
+        //alert(part); //lo
+
+
+
+        //alert(name.length);  //to get pop up length to get length of string
+
+        document.getElementById("demo").innerHTML = "Nissan";
+
+
+
+        let newtext = string.replace("Hello", "Who") // hellow is replaced by Who
+
+       // alert(newtext);
+
+
+
+        let textOne = "Hi There";
+
+        let textTwo = "How Are You";
+
+        let textThree = textOne.concat(" Sairaj! ", textTwo);
+
+        //alert(textThree.charCodeAt(0));
+
+        //alert(textThree.toUpperCase());
+
+
+
+        //TO PERFORM MATHEMATICAL OPERTIONS --- eval()
+
+        //alert(eval(10 * 9));
+
+
+
+        var num1=5, num2=10, num3 = 5;
+
+        var flag = num1 === num3;  // == -considers only value not datatype... === -considers value and datatype also
+
+       // alert(flag);
+
+
+
+        alert(new Date().getDay()); // it givew count of day in 1 to 7
+
+
+
+        switch(new Date().getDay())
+
+        {
+
+           
+
+        }
+
+
+
+
+    </script>
+
+   
+
+</body>
+
+</html>
