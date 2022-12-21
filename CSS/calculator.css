@@ -1,0 +1,42 @@
+
+.container{
+  background-color: black;
+  width :40%;
+  margin: auto;
+  padding: auto;
+}
+.sqrButton {
+
+    height: 50px;
+  
+    width: 50px;
+
+    margin: 5px 5px 5px 5px;
+  
+  }
+  .longButton {
+  
+    height: 50px;
+  
+    width: 100px;
+    margin: 5px 5px 5px 5px;
+  
+  }
+  
+  #inputClass {
+  
+    height: 50px;
+  
+    width: 320px;
+
+    margin-right: 10px;
+    margin-bottom: 5px;
+  
+  }
+  .ansButton{
+    height: 50px;
+  
+    width: 350px;
+
+    margin:5px 5px 10px 20px;
+  }
