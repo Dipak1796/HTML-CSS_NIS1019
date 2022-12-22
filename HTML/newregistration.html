@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Style sheet-->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+
+    <!--Javascript-->
+    <script type="text/javascript">
+        function matchPassword(){
+            var password=document.frmReg.password.value;
+            var conPassword=document.frmReg.pwConfirm.value;
+
+            //check condition
+            if(password===conPassword){
+                return true;
+            }else{
+                alert("Passord must match");
+                document.getElementById(txtPassword).focus();
+                return false;
+            }
+        }
+
+        //get Data
+        function getData(){
+            //getting values
+            var name=document.getElementById("txtName").value;
+            //saving to Storage
+            localStorage.setItem("txtNameSave",name);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-group mx-auto">
+            <h2>Personal Details</h2>
+            <!--Entry Form-->
+            <form id="frmReg" name="frmReg" method="post" action="../HTML/success.html" onsubmit="return matchPassword()">
+
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -93,7 +93,6 @@ function checkPassword()
             document.getElementById("spn_password").innerHTML = "";
             PasswordError = false;
         }
-
 }
 function confirmPassword()
 {
@@ -102,15 +101,12 @@ function confirmPassword()
 
     if(password !== confirmpassword)
         {
-           
             document.getElementById("spn_confirmpassword").innerHTML = "enter correct Password";
             ConfirmError = true;
         }
     else{
             document.getElementById("spn_confirmpassword").innerHTML = "";
             ConfirmError = false;
-
         }
-
 }
 
